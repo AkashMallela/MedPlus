@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: none;
+}
+
+:root{
+    --green:#708A73;
+    --blue:#45414A;
+    --c1: #95664C;
+    --c2: #EB9E6F;
+    --c3: #E5C9A6;
+}
+body{
+    background-color: rgb(243, 237, 237);
+    overflow-x: hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.header{
+    background-color: var(--green);
+    padding: 1rem;
+}
+.header .logo{
+    color: white;
+    font-weight: 600;
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navlist{
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-end;
+}
+.navitem{
+    color: var(--c3);
+}
+.header-bottom{
+    padding: 1rem 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+}
+.clinic{
+    color: white;
+    cursor: pointer;
+}
+
+.header-bottom .input{
+    display: flex;
+    gap:.5rem;
+}
+.header-bottom .input>div{
+    color: white;
+}
+.header-bottom input{
+    outline: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: none;
+    font-size: medium;
+}
+.category{
+    margin: 1rem 0;
+}
+.category-section{
+    padding: 0 1rem;
+    margin: 2.5rem 0;
+}
+.category-section>h1{
+    margin: 1rem 0;
+    font-size: 1.3rem;
+}
+.category-section>div{
+    transition: all 200ms;
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+.category-card{
+    display: flex ;
+    flex-direction: column;
+    background-color: white;
+    margin: .5rem;
+    min-height: 200px;
+    min-width: 150px;
+    border-radius: 8px;
+    padding: 0.4rem 0.4rem;
+    box-shadow: 0 2px 2px gray;
+    -webkit-box-shadow: 0px 10px 17px -6px rgba(148,146,148,0.55);
+    -moz-box-shadow: 0px 10px 17px -6px rgba(148,146,148,0.55);
+    box-shadow: 0px 10px 17px -6px rgba(148,146,148,0.55);
+}
+.category-card>p{
+    text-align: center;
+}
+.category-card img{
+    object-fit: contain;
+    flex-grow: 1;
+}
+
+hr{
+    margin: 1rem auto;
+    border-radius: 12px;
+    background-color: rgb(255, 255, 255);
+    height: 1px;
+    width: 80%;
+}
+.footer-container{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.app-store{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+.app-store a img{
+    max-width: 200px;
+}
